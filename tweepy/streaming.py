@@ -214,7 +214,7 @@ class Stream(object):
         self.api = API()
         self.headers = options.get("headers") or {}
         self.new_session()
-        self.body = None
+        self.body = ''
         self.retry_time = self.retry_time_start
         self.snooze_time = self.snooze_time_step
 
